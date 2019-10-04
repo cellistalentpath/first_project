@@ -56,6 +56,22 @@ h1 {
 	border: 3px solid black;
 }
 
+#search_bar {
+    float: right;
+}
+
+#search_bar input{
+    height: 42px;
+}
+
+#search_button {
+    float: right;
+}
+
+#search_button input {
+    height: 48px;
+}
+
 .leftImage {
 	position: absolute;
 	left: 0px;

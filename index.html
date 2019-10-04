@@ -16,7 +16,24 @@
 		</li>
 		<li><a href="https://talentpath.com/">Talent Path</a></li>
 		<li><a href="mailto:cellis@talentpath.com">Contact</a></li>
+		<li id="search_button">
+			<input
+				type="button"
+				id="submit_form"
+				onclick="checkInput()"
+				value="Submit"
+			/>
+		</li>
+		<li id="search_bar"><input type="text" placeholder="Search.." id = "searchBox"/></li>
 	</ul>
+
+	<script>
+		function checkInput() {
+            var query = document.getElementById("searchBox").value;
+			window.find(query);
+			return true;
+		}
+	</script>
 
 	<body>
 		<div class="main">
