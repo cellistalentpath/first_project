@@ -5,12 +5,14 @@ body {
 		rgba(131, 58, 180, 1) 0%,
 		rgba(253, 29, 29, 1) 50%,
 		rgba(252, 176, 69, 1) 100%
-    );
-    margin: 0;
+	);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
 }
 
 .main {
-	max-width: 50%;
+	width: 50%;
 	margin: 40px auto;
 	line-height: 1.6;
 	font-size: 20px;
@@ -26,19 +28,21 @@ a:hover {
 
 ul {
 	list-style-type: none;
-	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 0 !important;
 	overflow: hidden;
 	background-color: #333;
+	white-space: nowrap;
+	position: relative;
+	width: 100%;
 }
 
-li {
+ul li {
 	float: left;
 }
 
 li a {
-	display: block;
+	display: inline-block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
@@ -54,22 +58,27 @@ p {
 h1 {
 	background: white;
 	border: 3px solid black;
+	max-width: 70%;
+	margin: auto;
 }
 
 #search_bar {
-    float: right;
+	right: 57px;
+	position: absolute;
 }
 
-#search_bar input{
-    height: 42px;
+#search_bar input {
+	height: 42px;
+	width: 88px;
 }
 
 #search_button {
-    float: right;
+	right: 0px;
+	position: absolute;
 }
 
 #search_button input {
-    height: 48px;
+	height: 48px;
 }
 
 .leftImage {
@@ -78,6 +87,8 @@ h1 {
 	width: 20%;
 	top: 40%;
 	border: 3px solid white;
+	margin: 5px;
+	display: block;
 }
 
 .rightImage {
@@ -86,4 +97,6 @@ h1 {
 	width: 20%;
 	top: 40%;
 	border: 3px solid white;
+	margin: 5px;
+	display: block;
 }

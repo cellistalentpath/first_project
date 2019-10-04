@@ -9,13 +9,13 @@
 	</head>
 
 	<ul>
-		<li>
+		<li id="linkedIn">
 			<a href="https://www.linkedin.com/in/christopher-ellis-2507b2122/"
 				>Christopher Ellis</a
 			>
-		</li>
-		<li><a href="https://talentpath.com/">Talent Path</a></li>
-		<li><a href="mailto:cellis@talentpath.com">Contact</a></li>
+			</li>
+		<li id="talentPath"><a href="https://talentpath.com/">Talent Path</a></li>
+		<li id="contact"><a href="mailto:cellis@talentpath.com">Contact</a></li>
 		<li id="search_button">
 			<input
 				type="button"
@@ -24,12 +24,15 @@
 				value="Submit"
 			/>
 		</li>
-		<li id="search_bar"><input type="text" placeholder="Search.." id = "searchBox"/></li>
+		<li id="search_bar">
+			<input type="text" placeholder="Search.." id="searchBox" />
+		</li>
+		</li>
 	</ul>
 
 	<script>
 		function checkInput() {
-            var query = document.getElementById("searchBox").value;
+			var query = document.getElementById("searchBox").value;
 			window.find(query);
 			return true;
 		}
